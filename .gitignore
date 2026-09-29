@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mobile / React Native
+mobile/.expo/
+mobile/.expo-shared/
+mobile/dist/
+mobile/web-build/
+mobile/ios/Pods/
+mobile/ios/build/
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/local.properties
+*.keystore
+!debug.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+mobile/.metro-health-check*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Backend
+backend/uploads/
+*.sqlite
+*.sqlite3
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+target/
+*.tgz

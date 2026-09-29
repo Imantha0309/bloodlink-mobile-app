@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Bloodlink",
+    "slug": "bloodlink-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "scheme": "bloodlink",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#C62828"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Bloodlink uses your location to find compatible blood donors near you.",
+        "NSCameraUsageDescription": "Bloodlink uses the camera to scan a donor's verification QR code."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#C62828"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Bloodlink to scan donor QR codes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Bloodlink to find donors near you."
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}
